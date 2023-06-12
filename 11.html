@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11</title>
+</head>
+
+<body>
+    <script>
+        //         11. Utilizando Switch, faça um programa que pergunte em que turno
+        // você estuda. Peça para digitar “M” para matutino ou “V” para
+        // vespertino ou “N” para noturno. Mostre um alerta com a mensagem
+        // “Bom dia!” ou “Boa tarde” ou “Boa Noite” ou “Valor inválido”,
+        // conforme o caso.
+        const periodo = prompt("Que turno voce estuda? (M, T ou N)")
+        var saudacao
+        switch (periodo) {
+            case "M":
+                saudacao = "Bom dia"
+                break;
+
+            case "T":
+                saudacao = "Boa tarde"
+                break;
+
+            case "N":
+                saudacao = "Boa noite"
+                break;
+
+            default:
+                saudacao = "Valor inválido"
+                break;
+        }
+        alert(saudacao)
+    </script>
+</body>
+
+</html>
